@@ -7,7 +7,7 @@ let age=21
 let isLoggedin= true
 let state;
 
-// int => 2 to the power 23
+// Number => 2 to the power 23
 // bigint
 // string => ""
 // boolean => true/false
