@@ -7,5 +7,13 @@ let age=21
 let isLoggedin= true
 let state;
 
+// int => 2 to the power 23
+// bigint
+// string => ""
+// boolean => true/false
+// null => standalone value
+// undefined
+// symbol => it shows the uniqueness
+// object
 console.log(typeof undefined)
-console.log(typeof Null)
+console.log(typeof null)
