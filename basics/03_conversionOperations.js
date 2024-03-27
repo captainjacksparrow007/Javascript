@@ -33,8 +33,42 @@
 // console.log(valueInBoolean)
 
 // String
-let ValueforString=33
-let valueInString=String(ValueforString)
+// let ValueforString=33
+// let valueInString=String(ValueforString)
 
-console.log(valueInString)
-console.log(typeof(valueInString))
+// console.log(valueInString)
+// console.log(typeof(valueInString))
+
+//*****************Operations***************//
+
+let value=3
+let negvalue=-value
+
+// console.log(2+2)
+// console.log(2*2)
+// console.log(2**3)
+// console.log(3%2)
+// console.log(20/10)
+// console.log(2-2)
+
+// console.log(2+"2")
+// console.log("2"+2)
+// console.log(2+2+"2")
+// console.log(2+2+"2"+2)
+// console.log("2"+(2+2))
+// in js if string is first then all of the values treat as a string
+// console.log((3+4)%5*6)
+
+// console.log(+true)
+// console.log(+"")
+
+// let num1,num2,num3
+
+// num1=num2=num3=5+5
+// console.log(num1)
+
+// let gameCounter=100;
+// console.log(gameCounter++)
+// console.log(gameCounter)
+// console.log(++gameCounter)
+// console.log(gameCounter)
