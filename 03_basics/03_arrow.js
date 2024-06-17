@@ -42,6 +42,6 @@ const user={
 // const addTwo=(num1,num2)=> ( num1+num2)
 // console.log(addTwo(7,8));
 
-const addTwo=(num1,num2)=>({username:"hitesh"});
+const addTwo=(num1,num2)=>({username:"Dolly"});
 console.log(addTwo(7,8));
 
