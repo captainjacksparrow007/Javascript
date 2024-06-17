@@ -1,23 +1,30 @@
-// Datatypes in memory kept it in two types
-// Primitive and Non-primitive
-// Primitive data are call by value data types it means it gives the copy of the data not the actual data
-// Non Primitive data are call by reference data types it means it gives the actual data reference 
+const name1="Jayesh";
+const repoCount=50;
 
-// primitive data type : string,number(float,int,double),null(empty),undefiend(declare memory space we give result as undefined define it later),symbol(It defines the component as unique),bigInt(used in large number of data)
+console.log(name1 + repoCount + "values");
+console.log(`Hello my name is ${name1} and my repocount is ${repoCount}`);
 
-// non - primitive data type : Arrays,objects,functions
-const score=100
-let num=100.2
-let temp=null
-let userEmail
+const gameName=new String("Jayesh-DJ-57");
+// console.log(gameName[0]);
+// console.log(gameName.__proto__);
 
-const id=Symbol('123')
-const Did=Symbol('123')
-const id2="123"
-const did2="123"
-console.log(id2==did2)
-console.log(id==Did)
-console.log(id===Did)
+// console.log(gameName.toUpperCase());
+// console.log(gameName.length);
 
-let bigNumber=343456678896
-console.log(bigNumber)
+// console.log(gameName.charAt(2));
+// console.log(gameName.indexOf('a'));
+
+let newString=gameName.substring(0,4)
+console.log(newString);
+
+let anotherString=gameName.slice(4,-4);
+console.log(anotherString);
+
+let newStringOne="  Jayesh  ";
+console.log(newStringOne);
+console.log(newStringOne.trim());
+
+const url="www.jayesh.com";
+// console.log(url.replace('s','-'));
+console.log(url.includes("jay"));
+console.log(gameName.split('-'));
