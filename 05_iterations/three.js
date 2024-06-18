@@ -43,10 +43,10 @@ for(let [key,value] of map){
     console.log(`${key} :- ${value}`);
 }
 
-// let obj={
-//     game1:"NFS",
-//     game2:"GTA"
-// }
+let obj={
+    game1:"NFS",
+    game2:"GTA"
+}
 
 for(let [key,value] of Object.entries(obj)){
     console.log(`${key} :- ${value}`);
