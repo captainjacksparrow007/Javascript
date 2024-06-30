@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+</head>
+<body style="background-color: #414141;color:aliceblue">
+    <h1>Amazing Images</h1>
+    <ul id="images"> 
+        <li><img width="200px" id="stars" src="https://cdn.mos.cms.futurecdn.net/BfemybeKVXCf9pgX9WCxsc-650-80.jpg.webp" alt="stars"></li>
+        <li><img width="200px" id="india" src="https://assets.gqindia.com/photos/621d40624a7fb4a9f12e5e15/16:9/w_1600,c_limit/India.jpeg" alt="india"></li>
+        <li><img width="200px" id="river" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Varanasiganga.jpg/300px-Varanasiganga.jpg" alt="river"></li>
+        <li><img width="200px" id="horse" src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*gHh7r8C-jdb4Z2XmYNWDpw.jpeg" alt="chetak"></li>
+        <li><a style="color:aliceblue;text-decoration: none;" href="www.google.com" id="google">Google</a></li>
+    </ul>
+</body>
+<script>
+    // you can give it in the li tag also just you have to write the onclick then alert(then your message)
+    
+    // document.getElementById('horse').onclick=function(){
+    //     alert("horse clicked");
+    // }
+    
+    // jQuery = on
+    // attachEvent() previous times the good old days
+    
+    // type,timeStamp,defaultPrevented
+    // target,toElement,srcElement,currentTarget
+    // clientX,clientY,screenX,screenY
+    // altKey,ctrlKey,ShiftKey,keyCode
+    
+    document.getElementById('images').addEventListener('click',(e)=>{
+        // console.log(`clicked inside the ul`);
+        
+    },false)
+
+    document.getElementById('horse').addEventListener('click',(e)=>{
+        // console.log(`clicked on the horse`);
+        // e.stopPropagation();
+    },false)
+
+    // eventPropogation 
+    // it is of two types first public it is default false you give it or not 
+    // second is event capturing in this you have to give it true it is used in exceptional cases
+
+    // bubble event it is event that is the public in eventPropagation it means it moves from bottom to up first the li element then the ul then body
+    
+    // but the capturing one is different it first get the parent element then it will move next
+
+    // when you have to stop the bubbling and capturing you have to just write e.stopPropagation();
+
+    document.getElementById('google').addEventListener('click',(e)=>{
+        e.preventDefault();
+        // e.stopPropagation();
+        console.log(`Google clicked`);
+    })
+
+    document.querySelector('#images').addEventListener('click',(e)=>{
+        // console.log(e.target.parentNode)
+        // const removeIt=e.target.parentNode;
+        // by doing this there is a case if someone click on the li tag then whole ul list will remove so for doing this you have to target the tagName
+        // removeIt.remove(); 
+        console.log(e.target.tagName);
+        if(e.target.tagName=='IMG'){
+            let removeIt=e.target.parentNode;
+            removeIt.remove();
+        }
+    })
+    // removeIt.parentNode.removeChild(removeIt);
+</script>
+</html>
