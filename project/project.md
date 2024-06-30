@@ -1,5 +1,5 @@
 # project javascript
-[click here](https://stackblitz.com/edit/stackblitz-starters-6krukh?file=index.html)
+[click here](https://stackblitzstarters6krukh-ufmb-kd703ox7--8080--70dbe416.local-credentialless.webcontainer.io/)
 
 # project 1
 ## solution
