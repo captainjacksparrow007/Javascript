@@ -1,8 +1,8 @@
-# project javascript
+# Project Javascript
 [click here](https://stackblitzstarters6krukh-ufmb-kd703ox7--8080--70dbe416.local-credentialless.webcontainer.io/)
 
-# project 1
-## solution
+# Project 1 - Color Changer
+## Solution
 ```javascript
 const buttons = document.querySelectorAll('.button');
 const body = document.querySelector('body');
@@ -40,8 +40,8 @@ buttonReset.addEventListener('click', (e) => {
 
 ```
 
-# project 2
-## solution 
+# Project 2 - BMI Calculator
+## Solution 
 ```javascript
 const answer = document.querySelector('.answer');
 const value1 = document.querySelector('.value1');
@@ -81,8 +81,8 @@ btn.addEventListener('click', (e) => {
 
 ```
 
-# project 3
-## solution 
+# Project 3 - Digital Clock
+## Solution 
 ```javascript
 const clock = document.getElementById('clock');
 
@@ -99,8 +99,8 @@ setInterval(() => {
 
 ```
 
-# project 4
-## solution
+# Project 4 - Guess Number
+## Solution
 ```javascript
 let randomNumber = parseInt(Math.random() * 100 + 1);
 const submit = document.querySelector('#sbt');
