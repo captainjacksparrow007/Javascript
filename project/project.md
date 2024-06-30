@@ -1,8 +1,8 @@
-#project javascript
+# project javascript
 [click here](https://stackblitz.com/edit/stackblitz-starters-6krukh?file=index.html)
 
-#project 1
-##solution
+# project 1
+## solution
 ```javascript
 const buttons = document.querySelectorAll('.button');
 const body = document.querySelector('body');
@@ -40,8 +40,8 @@ buttonReset.addEventListener('click', (e) => {
 
 ```
 
-#project 2
-##solution 
+# project 2
+## solution 
 ```javascript
 const answer = document.querySelector('.answer');
 const value1 = document.querySelector('.value1');
@@ -81,8 +81,8 @@ btn.addEventListener('click', (e) => {
 
 ```
 
-#project 3
-##solution 
+# project 3
+## solution 
 ```javascript
 const clock = document.getElementById('clock');
 
@@ -99,8 +99,8 @@ setInterval(() => {
 
 ```
 
-#project 3
-##solution
+# project 4
+## solution
 ```javascript
 let randomNumber = parseInt(Math.random() * 100 + 1);
 const submit = document.querySelector('#sbt');
