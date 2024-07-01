@@ -1,5 +1,5 @@
 # Project Javascript
-[click here](https://stackblitzstarters6krukh-ufmb-kd703ox7--8080--70dbe416.local-credentialless.webcontainer.io/)
+[Click Here](https://stackblitz.com/edit/stackblitz-starters-6krukh?file=index.html)
 
 # Project 1 - Color Changer
 ## Solution
