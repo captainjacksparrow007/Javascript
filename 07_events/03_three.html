@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events 3</title>
+</head>
+<body>
+    <h1>Jayesh Hello How Are You!!!</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const setMe=()=>{
+        console.log("Jayesh is here I am fine");
+    }
+    let say=null;
+    document.getElementById('start').addEventListener('click',()=>{
+        say=setInterval(setMe,1000);
+    })
+    document.getElementById('stop').addEventListener('click',()=>{
+        clearInterval(say);
+        console.log("Event is stop");
+    })
+
+
+</script>
+</html>
