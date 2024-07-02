@@ -3,22 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Advance Javascript</title>
-    <style>
-        .container{
-            display:flex;
-            flex-direction:column;
-            justify-content: center;
-            text-align:center;
-            margin: 10% auto;
-            width: 50%;
-        }
-        th,td{
-            border:1px solid white;
-            padding:0.5rem;
-        }
-    </style>
+    <link rel="stylesheet" href="01_style.css">
 </head>
-<body style="background-color: #272626;color:aliceblue;">
+<body>
     <div class="container">
         <h1>XMLHttpRequest</h1>
         <table>
@@ -54,18 +41,9 @@
             </tr>
         </table>
     </div>
+    <div class="card">
+        <button id="fetchDetails">Fetch</button>
+    </div>
 </body>
-<script>
-    const myUrl='https://api.github.com/users/captainjacksparrow007';
-    const xhr=new XMLHttpRequest();
-    xhr.open('GET',myUrl);
-    xhr.onreadystatechange=function(){
-        console.log(xhr.readyState);
-        if(xhr.readyState===4){
-            const data=JSON.parse(this.responseText);
-            console.log(data.followers);
-        }
-    }
-    xhr.send();
-</script>
+<script src="01_script.js"></script>
 </html>
