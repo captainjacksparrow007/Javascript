@@ -26,7 +26,8 @@
 			"settings": {
 				"editor.fontSize": 28,
 				"terminal.integrated.fontSize": 24,
-				"editor.wordWrap": "on"
+				"editor.wordWrap": "on",
+				"workbench.colorTheme": "Dark+ (default dark)"
 			}
 			
 		}
