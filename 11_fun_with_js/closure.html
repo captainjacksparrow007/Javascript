@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure & lexical scoping</title>
+</head>
+<body style="background-color: #414141;"> 
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+<script>
+    // lexical scoping
+    // function outer(){
+    //     let var1="jayesh";
+    //     function inner(){
+    //         let var2="hello";
+    //         console.log(var1);
+    //         console.log(var2);
+    //     }
+    //     inner();
+    //     console.log(var2);
+    // }
+    // outer();
+
+    // function dad(){
+    //     let var1="Jayesh";
+    //     function son1(){
+    //         let var2="Heyy Heyy";
+    //         console.log(var1);
+    //     }
+    //     // console.log(var2);
+    //     function son2(){
+    //         let var3="hello";
+    //         console.log(var1);
+    //         // console.log(var2);
+    //         console.log(var3);
+    //     }
+    //     // console.log(var3);
+    //     son1();
+    //     son2();
+    // }
+    // dad();
+
+    // closure
+
+    function one(){
+        let var1="J";
+        function two(){
+            console.log(var1);
+        }
+        return two;
+    }
+
+    const callFunc=one();
+    callFunc();
+
+    // while returning the function behind the scene is with the help of lexical scoping you can only execute the whole function not only the returning func you will get whole scope execution from that
+</script>
+
+<script>
+    // document.getElementById("orange").onclick=function(){
+    //     document.body.style.backgroundColor=`orange`;
+    // }
+
+    // document.getElementById('green').onclick=function(){
+    //     document.body.style.backgroundColor=`green`;
+    // }
+
+    function clickHandler(color){
+        // document.body.style.backgroundColor=`green`;
+        return function(){
+            document.body.style.backgroundColor=`${color}`;
+        }
+    }
+
+    document.getElementById(`orange`).onclick=clickHandler('orange');
+    document.getElementById(`green`).onclick=clickHandler('green');
+</script>
+</html>
